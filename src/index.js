@@ -12,10 +12,10 @@ root.render(
     <React.StrictMode>
         <BrowserRouter>
             <Routes>
-                <Route path="/home" element={<Index />}>
-                    <Route path="home" index element={<Home/>}/>
+
+                <Route path="/" element={<Index/>}/>
+                    <Route path="home" element={<Home/>}/>
                     <Route path="store" element={<Store/>}/>
-                </Route>
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
