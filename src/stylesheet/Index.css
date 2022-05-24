@@ -3,6 +3,10 @@ body {
     background-repeat: repeat;
 }
 
+body, #root, .app {
+    height:100vh;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -11,6 +15,7 @@ body {
 .main {
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
 }
 
 .rightSide {
@@ -25,11 +30,11 @@ body {
 
 .menuItem {
     height: 90px;
-    border-right: 5px solid #6a8494;
+    border-right: 5px solid #333;
 }
 
 .secondItem {
-    border-right: 5px solid #6a8494;
+    border-right: 5px solid #333;
 }
 
 .index-sidenav-contents {
@@ -91,11 +96,12 @@ body {
 }
 
 .hometext {
-    padding: 20px;
+    padding: 80px;
 }
 
 .hometext p {
     font-size: 13px;
+    text-align:justify;
 }
 
 

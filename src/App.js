@@ -1,16 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Index from './components/Index';
 import About from './components/About';
+import Store from './components/Store';
 
 const App = () => {
     return (
-        <div className="App">
-            <Router>
+        <div className="app">
+            <Router basename="/bookstore">
                 <Routes>
-                    <Route path="/" element={<Index/>}/>
-                    <Route path="/bookstore/about" element={<About/>}/>
-                    {/*<Route path="/contact" element={<Contact/>}/>*/}
+                    <Route index path="/" element={<Index/>}/>
+                    <Route path="/about" element={<About/>}/>
+                    <Route path="/store" element={<Store/>}/>
                 </Routes>
             </Router>
         </div>
