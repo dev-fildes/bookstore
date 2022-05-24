@@ -1,18 +1,16 @@
 import React from 'react';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Index from './components/Index';
 import About from './components/About';
 
 const App = () => {
     return (
         <div className="App">
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/bookstore" element={<Index/>}/>
-                    <Route path="/bookstore/about" element={<About/>}/>
+                <Router>
+                    <Route exact path="/bookstore" component={Index}/>
+                    <Route exact path="/bookstore/about" component={About}/>
                     {/*<Route path="/contact" element={<Contact/>}/>*/}
-                </Routes>
-            </BrowserRouter>
+                </Router>
         </div>
     );
 }
