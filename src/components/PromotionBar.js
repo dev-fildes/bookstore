@@ -2,10 +2,10 @@ import React from 'react';
 import {FaTrophy} from "react-icons/fa";
 import {FaPlus} from "react-icons/fa";
 
-export const PromotionBar = (props) => {
+export const PromotionBar = () => {
     return (
         <div className="menuItem">
-            <div class={'promotionbar-container'}>
+            <div className={'promotionbar-container'}>
                 <div className={'promotionbar-bestseller'}>
                     <FaTrophy className={'promotion-icon'}/>
                     <span className={'bestseller-text'}><b>Best Seller</b> — Enigma</span>
