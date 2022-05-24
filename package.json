@@ -1,7 +1,7 @@
 {
   "name": "writing_blog",
   "version": "0.1.0",
-  "homepage": "https://devfildes.github.io/bookstore",
+  "homepage": "https://dev-fildes.github.io/bookstore",
   "private": true,
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
