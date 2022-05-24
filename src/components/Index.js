@@ -1,11 +1,11 @@
 import React from 'react';
-import {Outlet} from "react-router-dom";
 import '../stylesheet/Index.css';
 import Navigation from './Navigation';
 import PromotionBar from "./PromotionBar";
+import Home from './Home';
 import Footer from './subcomponents/Footer';
 
-export const Index = (props) => {
+export const Index = () => {
     return (
         <div className={'container'}>
             <div className="main">
@@ -13,7 +13,7 @@ export const Index = (props) => {
 
                 <div className="rightSide">
                     <PromotionBar/>
-                    <Outlet />
+                    <Home/>
                 </div>
             </div>
             <Footer/>

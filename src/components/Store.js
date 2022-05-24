@@ -1,7 +1,18 @@
 import React from 'react';
+import Navigation from "./Navigation";
+import PromotionBar from "./PromotionBar";
+import Home from "./Home";
+import Footer from "./subcomponents/Footer";
 
 export const Store = () => {
     return (
+        <div className={'container'}>
+            <div className="main">
+                <Navigation/>
+
+                <div className="rightSide">
+                    <PromotionBar/>
+
         <div className={'store'}>
             <div className="container">
                 <div className="row">
@@ -45,6 +56,11 @@ export const Store = () => {
 
                 </div>
             </div>
+        </div>
+
+                </div>
+            </div>
+            <Footer/>
         </div>
     )
 }
