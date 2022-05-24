@@ -1,8 +1,8 @@
 import React from 'react';
 import Navigation from "./Navigation";
 import PromotionBar from "./PromotionBar";
-import HomeText from "./subcomponents/HomeText";
 import Footer from "./subcomponents/Footer";
+import BookList from "./subcomponents/BookList";
 
 export const About = () => {
     return (
@@ -14,7 +14,7 @@ export const About = () => {
                     <PromotionBar/>
                     <div className={'index-breakpoint'}></div>
                     <div className="secondItem">
-                        <HomeText/>
+                        <BookList/>
                     </div>
                 </div>
             </div>
