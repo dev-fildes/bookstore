@@ -1,21 +1,31 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Index from './components/Index';
-import About from './components/About';
-import Store from './components/Store';
+import {
+    Outlet,
+} from "react-router-dom";
+import Navigation from "./components/Navigation";
+import PromotionBar from "./components/PromotionBar";
+import Carousel from "./components/subcomponents/Carousel";
+import Footer from "./components/subcomponents/Footer";
 
-const App = () => {
+export const App = () => {
     return (
-        <div className="app">
-            <Router basename="/bookstore">
-                <Routes>
-                    <Route index path="/" element={<Index/>}/>
-                    <Route path="/about" element={<About/>}/>
-                    <Route path="/store" element={<Store/>}/>
-                </Routes>
-            </Router>
+        <div className={'container'}>
+            <div className="main">
+                <Navigation/>
+
+                <div className="rightSide">
+                    <PromotionBar/>
+                    <Carousel/>
+
+                    <div className={'index-breakpoint'}></div>
+                    <div className="secondItem">
+                        <Outlet />
+                    </div>
+                </div>
+            </div>
+            <Footer/>
         </div>
-    );
+    )
 }
 
 export default App;
